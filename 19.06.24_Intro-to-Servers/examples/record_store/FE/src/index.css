@@ -1,0 +1,198 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 1rem;
+}
+h2 {
+  text-align: center;
+}
+
+.App {
+  min-height: 100vh;
+}
+.record-info {
+  display: grid;
+  place-items: center;
+}
+.record-list-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 5rem;
+  align-items: center;
+  gap: 34px;
+  margin-top: 57px;
+}
+
+.record-list-container button {
+  cursor: pointer;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.cart-list-container button {
+  cursor: pointer;
+}
+
+.record-card {
+  border: 2px solid;
+  padding: 1rem;
+  min-width: 15rem;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.record-card img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.previewImg img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+}
+
+.cart-item {
+  display: flex;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.cart-item img {
+  width: 10rem;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+.cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  width: 100%;
+}
+.cart-bottom,
+.cart-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cart-button-container {
+  display: flex;
+}
+.cartButton {
+  margin: 0.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20vh;
+  padding: 1rem;
+}
+
+.links-right a,
+.links-left a {
+  margin: 1rem;
+}
+.recordEditButton {
+  margin: 1rem;
+}
+
+.record-actions {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+.addRecordForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.addRecordForm [type='submit'] {
+  padding: 0.5rem 1rem;
+}
+input {
+  margin: 1rem;
+  padding: 0.2rem 0.5rem;
+}
+.footer {
+  height: 20vh;
+  display: grid;
+  place-content: center;
+  background-color: #1c1a1a;
+}
+.header {
+  height: 20vh;
+  background-color: #1c1a1a;
+}
+.cart,
+.user,
+.home,
+.record-list,
+.record-detail {
+  min-height: 60vh;
+}
+.record-detail {
+  padding: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.home,
+.user {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+.record-list {
+  padding: 2rem;
+}
+.record-list form {
+  margin: 2rem auto;
+  width: 50%;
+}
+.record-list form input {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
