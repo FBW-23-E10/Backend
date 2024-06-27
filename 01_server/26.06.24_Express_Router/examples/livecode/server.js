@@ -1,12 +1,13 @@
 import express from 'express';
 import productsRouter from './routes/productsRouter.js';
+import usersRouter from './routes/usersRouter.js';
 
 
 const app = express();
 const PORT = 3000;
 
 app.use('/products',productsRouter)
-//app.use('/users',usersRouter)
+app.use('/users',usersRouter)
 
 
 app.get('/', (req, res) => {
