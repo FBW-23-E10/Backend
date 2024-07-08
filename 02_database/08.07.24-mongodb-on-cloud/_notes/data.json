@@ -1,0 +1,282 @@
+[
+  {
+    "gender": "male",
+    "name": {
+      "title": "Monsieur",
+      "first": "Lukas",
+      "last": "Jean"
+    },
+    "location": {
+      "street": {
+        "number": 8417,
+        "name": "Rue Abel"
+      },
+      "city": "Haute-Ajoie",
+      "state": "Luzern",
+      "country": "Switzerland",
+      "postcode": 4600,
+      "coordinates": {
+        "latitude": "-57.8749",
+        "longitude": "-129.3926"
+      },
+      "timezone": {
+        "offset": "-3:00",
+        "description": "Brazil, Buenos Aires, Georgetown"
+      }
+    },
+    "email": "lukas.jean@example.com",
+    "login": {
+      "uuid": "975d567b-0a94-4d48-8330-c9256434e81f",
+      "username": "bluebird785",
+      "password": "cattle",
+      "salt": "aOLr1qHb",
+      "md5": "e61ea867ce1f1a51f023bb7b84f44087",
+      "sha1": "550fd8aa265b4ff4a8ce81fd32dbb9f9c76f8562",
+      "sha256": "05d297e340f8d265a79da107b2b9c7719babe7f2149b3fd918da66a4b888a071"
+    },
+    "dob": {
+      "date": "1978-11-24T03:21:31.644Z",
+      "age": 45
+    },
+    "registered": {
+      "date": "2005-09-07T01:58:25.316Z",
+      "age": 18
+    },
+    "phone": "076 229 50 98",
+    "cell": "075 186 12 98",
+    "id": {
+      "name": "AVS",
+      "value": "756.5458.9193.95"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/34.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/34.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/34.jpg"
+    },
+    "nat": "CH"
+  },
+  {
+    "gender": "male",
+    "name": {
+      "title": "Monsieur",
+      "first": "Sérgio",
+      "last": "Lambert"
+    },
+    "location": {
+      "street": {
+        "number": 3270,
+        "name": "Rue de L'Abbé-Soulange-Bodin"
+      },
+      "city": "Wintersingen",
+      "state": "Luzern",
+      "country": "Switzerland",
+      "postcode": 1730,
+      "coordinates": {
+        "latitude": "64.9009",
+        "longitude": "-156.7750"
+      },
+      "timezone": {
+        "offset": "-4:00",
+        "description": "Atlantic Time (Canada), Caracas, La Paz"
+      }
+    },
+    "email": "sergio.lambert@example.com",
+    "login": {
+      "uuid": "2da24fd8-78de-42f6-b823-e7459f7f4419",
+      "username": "orangewolf163",
+      "password": "skeeter",
+      "salt": "sqeKmcBA",
+      "md5": "d006b866f1f9e39c53a16a46c198ed40",
+      "sha1": "54c5d0d22e9724787e832933e66b9402a1972233",
+      "sha256": "72f46b6f92201f1a1bc434695453e0459afbaefd86659f83654735872d9e26d3"
+    },
+    "dob": {
+      "date": "1979-01-12T17:15:07.038Z",
+      "age": 45
+    },
+    "registered": {
+      "date": "2009-09-02T06:51:34.326Z",
+      "age": 14
+    },
+    "phone": "078 778 28 68",
+    "cell": "078 812 44 51",
+    "id": {
+      "name": "AVS",
+      "value": "756.6463.4024.18"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/93.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/93.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/93.jpg"
+    },
+    "nat": "CH"
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Mrs",
+      "first": "Nandy",
+      "last": "Boeren"
+    },
+    "location": {
+      "street": {
+        "number": 2901,
+        "name": "Dupontplein"
+      },
+      "city": "Borger-Odoorn",
+      "state": "Zuid-Holland",
+      "country": "Netherlands",
+      "postcode": "5211 BE",
+      "coordinates": {
+        "latitude": "-53.9582",
+        "longitude": "-164.6955"
+      },
+      "timezone": {
+        "offset": "-12:00",
+        "description": "Eniwetok, Kwajalein"
+      }
+    },
+    "email": "nandy.boeren@example.com",
+    "login": {
+      "uuid": "76d8e195-f1cc-4bd4-9aea-d247681a6a47",
+      "username": "happybutterfly386",
+      "password": "badgers",
+      "salt": "7Q7psGlP",
+      "md5": "a825f162cfcf0a4901ca3f4f9c064721",
+      "sha1": "df0f42cdb3c034fc9eb6b24d0e68d3ac3aba696e",
+      "sha256": "b95e7a0ebd79eb0ed220a27315be186fa50a7f193f0e957c454d21699b8f9d1a"
+    },
+    "dob": {
+      "date": "1972-10-03T05:03:05.815Z",
+      "age": 51
+    },
+    "registered": {
+      "date": "2004-02-21T12:53:58.985Z",
+      "age": 20
+    },
+    "phone": "(0155) 253844",
+    "cell": "(06) 95786003",
+    "id": {
+      "name": "BSN",
+      "value": "89633597"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/16.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/16.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/16.jpg"
+    },
+    "nat": "NL"
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Madame",
+      "first": "Jolanda",
+      "last": "Roussel"
+    },
+    "location": {
+      "street": {
+        "number": 6943,
+        "name": "Avenue Jean-Jaurès"
+      },
+      "city": "Sessa",
+      "state": "Neuchâtel",
+      "country": "Switzerland",
+      "postcode": 2840,
+      "coordinates": {
+        "latitude": "-80.8065",
+        "longitude": "-92.2327"
+      },
+      "timezone": {
+        "offset": "+1:00",
+        "description": "Brussels, Copenhagen, Madrid, Paris"
+      }
+    },
+    "email": "jolanda.roussel@example.com",
+    "login": {
+      "uuid": "61dbaa1a-0471-4f8f-af34-82a16157126f",
+      "username": "orangemouse184",
+      "password": "thor",
+      "salt": "Yl3GMoQ0",
+      "md5": "b66afc1a671002b57d9e66dc38faae5d",
+      "sha1": "34942092d1719c208aaea71f8b572abb05b3dcee",
+      "sha256": "38a7f514f8647f2a2b964a5d460986190ba4f322622142f0716d96134204dba7"
+    },
+    "dob": {
+      "date": "1967-05-17T12:34:47.577Z",
+      "age": 57
+    },
+    "registered": {
+      "date": "2016-10-31T21:58:20.016Z",
+      "age": 7
+    },
+    "phone": "079 082 06 70",
+    "cell": "075 219 48 24",
+    "id": {
+      "name": "AVS",
+      "value": "756.1924.2188.10"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/56.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/56.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/56.jpg"
+    },
+    "nat": "CH"
+  },
+  {
+    "gender": "female",
+    "name": {
+      "title": "Mrs",
+      "first": "Silke",
+      "last": "Kristensen"
+    },
+    "location": {
+      "street": {
+        "number": 6075,
+        "name": "Gammel Landevej"
+      },
+      "city": "Amager",
+      "state": "Sjælland",
+      "country": "Denmark",
+      "postcode": 49645,
+      "coordinates": {
+        "latitude": "-47.5835",
+        "longitude": "-94.3101"
+      },
+      "timezone": {
+        "offset": "-9:00",
+        "description": "Alaska"
+      }
+    },
+    "email": "silke.kristensen@example.com",
+    "login": {
+      "uuid": "a6a38288-496d-477d-b9cd-a014df9559fb",
+      "username": "beautifulpanda239",
+      "password": "babybaby",
+      "salt": "OzOhBX1V",
+      "md5": "f1204d703b20e7dd87d21b8225668b28",
+      "sha1": "d54d86f0dfa713eda1a4554e9efc56bdf11146cb",
+      "sha256": "28be7c7de2ee4aa9d1d59e6c9099418cec3797f64a575bf957620257250bf905"
+    },
+    "dob": {
+      "date": "1996-12-14T05:09:18.806Z",
+      "age": 27
+    },
+    "registered": {
+      "date": "2013-06-23T12:35:15.501Z",
+      "age": 11
+    },
+    "phone": "75078858",
+    "cell": "77758160",
+    "id": {
+      "name": "CPR",
+      "value": "131296-5910"
+    },
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/women/73.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/women/73.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/73.jpg"
+    },
+    "nat": "DK"
+  }
+]
