@@ -153,7 +153,6 @@ const userSchema = new Schema({
 
 
 ## Exercises
-
 [17_be-mongoose-schemas](https://classroom.github.com/a/9I2HKZ-z)
 
 ## Upcoming
