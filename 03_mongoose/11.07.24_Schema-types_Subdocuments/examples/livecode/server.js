@@ -3,6 +3,9 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import recordRouter from './routes/recordRouter.js';
+import { errorHandler, notFound } from './middleware/errors.js';
+import userRouter from './routes/userRouter.js';
+
 const app = express();
 
 dotenv.config();
@@ -13,24 +16,11 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/records', recordRouter);
+app.use('/users', userRouter);
 
 // error handler
-app.use((req, res, next) => {
-  const err = new Error('Route not defined!');
-  err.status = 404;
-  next(err);
-});
-
-app.use((err, req, res, next) => {
-  if (err) {
-    err.status ||= 500;
-    res.status(err.status).json({
-      status: err.status,
-      message: err.message,
-    });
-    next();
-  }
-});
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`server running on ${PORT}`));
 
