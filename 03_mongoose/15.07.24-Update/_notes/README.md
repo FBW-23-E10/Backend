@@ -96,15 +96,10 @@
 - Get Updated Document
 - Apply Schema validation
 
-<!-- 
 
 ## References
 - [Update by Id](https://mongoosejs.com/docs/api/model.html#Model.findByIdAndUpdate())
 - [Validation](https://mongoosejs.com/docs/validation.html)
 
 ## Exercises
-- []()
-- []()
-- []()
-
--->
+- [18_be-mongoose-animal-shelter](https://classroom.github.com/a/GCSVBO64)
