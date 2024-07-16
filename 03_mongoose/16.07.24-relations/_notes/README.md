@@ -68,7 +68,7 @@ In MongoDB, we can use the `ref` schema option to create relationships between d
     const students = await Student.find().populate('courses').exec();
     const courses = await Course.find().populate('students').exec();
   ```
-<!-- 
+
 
 ## Wrap-up
 
@@ -78,10 +78,7 @@ In MongoDB, we can use the `ref` schema option to create relationships between d
 - We can `populate` fields with referenced values
 
 ## References
-- []()
-- []()
+- [populate](https://mongoosejs.com/docs/populate.html)
 
 ## Exercises
-- []()
-- []()
--->
+- [19_be-mongoose-employee-registry](https://classroom.github.com/a/WCAWBqA_)
