@@ -184,9 +184,6 @@ _Example:_
 ## Exercises
 - [15_be-mongoose-basic-exercises](https://classroom.github.com/a/THy6DUUG)
 
-<!-- 
 ## Upcommings
 - Creating a simple API (CRUD)
 - Seeding a database with mock data
-
--->
