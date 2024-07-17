@@ -1,13 +1,13 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { Post, User } from './models.js';
-
+import { User } from './models.js';
+import { Post } from './postModel.js';
 dotenv.config();
 const app = express();
 
 // db con
-mongoose.connect(process.env.DB_URL);
+mongoose.connect('mongodb+srv://noname:1234@cluster0.1b1vhee.mongodb.net/');
 mongoose.connection.on('connected', ()=>{console.log('connection established! 😀')})
 mongoose.connection.on('error', (err)=>console.log('db con err:', err.message))
 
@@ -47,7 +47,7 @@ app.post('/post', async(req, res, next) => {
 app.get('/post', async(req, res, next) => {
     try {
         
-        const posts = await Post.find().populate('author', 'fullname').exec();
+        const posts = await Post.find().populate('author',[ 'email','fullname']).exec();
         res.json(posts)
 
     } catch (error) {
@@ -62,5 +62,5 @@ app.use((err, req, res, next)=>{
     }
 })
 
-const port = process.env.PORT || 5000;
+const port = 8000;
 app.listen(port, console.log(`server is up on port: ${port} 🚀`))
