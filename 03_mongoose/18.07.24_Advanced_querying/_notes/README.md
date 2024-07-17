@@ -13,7 +13,7 @@
 - Pagination: results offset with `Query.prototype.skip(<number>)`
 - Sorting results: `Query.prototype.sort(...)`
 - Filtering results `.where(...)`, `.equals(...)`, `.gt(...)`, `.lt(...)`
-- Full stack experiment: product search with filtering, sorting and pagination
+
 
 ## Pagination
 
