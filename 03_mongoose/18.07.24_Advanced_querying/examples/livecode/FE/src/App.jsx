@@ -33,25 +33,14 @@ function App() {
     if (direction === 'next') setCurrentPage((currentPage) => currentPage + 1);
   };
   
-  console.log(currentPage + 1);
-  console.log(numberOfPages);
+  console.log('currentPage + 1',currentPage + 1);
+  console.log('currentPage',currentPage)
+  console.log('limit',limit)
+
   return (
     <>
       <h1>Comments</h1>
-      <div>
-        <label htmlFor='limit'>sort</label>
-        <select
-          type='text'
-          name='limit'
-          id='limit'
-          value={limit}
-          onChange={sorting}
-        >
-          <option value='user'>user</option>
-          <option value='comment_ascending'>comment_ascending</option>
-          <option value='comment_descending'>comment_descending</option>
-        </select>
-      </div>
+  
       <div>
         <label htmlFor='limit'>Set limit per page</label>
         <input

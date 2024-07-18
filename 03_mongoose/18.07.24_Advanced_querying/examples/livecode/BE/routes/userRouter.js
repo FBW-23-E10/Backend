@@ -7,17 +7,10 @@ userRouter
   .route('/')
   .get(async (req, res, next) => {
     try {
-      const role = req.query.role;
-      const age = parseInt(req.query.age);
-      console.log(role);
-      //console.log(age);
+ 
       const Users = await User.find({})
         .populate('comments', 'content')
-        /* .where('role')
-        .equals(role) */
-        .where('age')
-        .gt(age)
-        .sort({ createdAt: 'asc' })
+  
         .exec();
       res.send(Users);
     } catch (error) {
@@ -84,5 +77,8 @@ userRouter.route('/seed').post(async (req, res, next) => {
     next(error);
   }
 });
+
+
+
 
 export default userRouter;

@@ -6,6 +6,7 @@ const commentRouter = Router();
 
 commentRouter
   .route('/')
+  
   .get(async (req, res, next) => {
     const currentPage = parseInt(req.query.page) || 0;
     console.log(currentPage);
@@ -18,10 +19,12 @@ commentRouter
 
     const comments = await Comment.find({})
       .skip(currentPage * limit)
+ 
       .limit(limit)
-      .populate('user', 'name')
+    /*   .populate('user', 'name') */
       .exec();
 
+      console.log(comments)
     res.send({
       pagination: { currentPage, numberOfPages, totalCommentCount },
       comments,
@@ -70,5 +73,31 @@ commentRouter.route('/seed').post(async (req, res, next) => {
     next(error);
   }
 });
+
+
+
+
+/* 
+  .get(async (req, res, next) => {
+    const currentPage = parseInt(req.query.page) || 0;
+    console.log(currentPage);
+    const limit = req.query.limit || 0;
+    const allComments = await Comment.find();
+    parseInt(limit);
+    const totalCommentCount = allComments.length;
+
+    const numberOfPages = totalCommentCount / limit;
+
+    const comments = await Comment.find({})
+      .skip(currentPage * limit)
+      .limit(limit)
+      .populate('user', 'name')
+      .exec();
+
+    res.send({
+      pagination: { currentPage, numberOfPages, totalCommentCount },
+      comments,
+    });
+  }) */
 
 export default commentRouter;

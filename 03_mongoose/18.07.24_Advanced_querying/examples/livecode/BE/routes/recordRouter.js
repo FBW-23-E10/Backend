@@ -6,10 +6,7 @@ const recordRouter = Router();
 recordRouter
   .route('/')
 
-  .get(async (req, res, next) => {
-    const records = await Record.find({}).where('price').gt(10).sort({price:'asc'}).exec();
-    res.send(records);
-  })
+
   .post(async (req, res, next) => {
     const newRecord = req.body;
     await Record.create(newRecord);
@@ -52,5 +49,11 @@ recordRouter.route('/seed').post(async (req, res, next) => {
     next(error);
   }
 });
+
+
+/* .get(async (req, res, next) => {
+  const records = await Record.find({}).where('price').gt(10).sort({price:'asc'}).exec();
+  res.send(records);
+}) */
 
 export default recordRouter;
