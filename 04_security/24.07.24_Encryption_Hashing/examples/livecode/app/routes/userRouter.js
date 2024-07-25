@@ -34,14 +34,16 @@ userRouter
   .post(validateLoginData, sanitizeLoginData, async (req, res, next) => {
     try {
       const userToLogIn = await User.findOne({ email: req.body.email });
-
-      const passwordCorrect = await userToLogIn.authenticate(req.body.password);
+      const passwordCorrect = await userToLogIn.authenticate(
+        req.body.password,
+        userToLogIn.password
+      );
 
       if (!userToLogIn || !passwordCorrect) {
         throw new Error('Sorry, incorrect email or password !');
       }
 
-      res.send('Congrats, you are logged in!');
+      res.send(userToLogIn);
     } catch (error) {
       next(error);
     }
