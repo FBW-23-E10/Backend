@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { Post, User } from './models.js';
+import { generateUsers } from './fake_data.js';
 
 dotenv.config();
 const app = express();
@@ -11,6 +12,8 @@ mongoose.connect(process.env.DB_URL);
 mongoose.connection.on('connected', ()=>{console.log('connection established! 😀')})
 mongoose.connection.on('error', (err)=>console.log('db con err:', err.message))
 
+// seeding data
+// generateUsers();
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))

@@ -1,4 +1,4 @@
-# Day.3 - Backend - RESTful API
+# Day3 - Backend - RESTful API
 
 ## Recap
 #### Introduction

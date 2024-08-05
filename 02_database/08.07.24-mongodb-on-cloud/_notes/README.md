@@ -29,7 +29,6 @@
   - Choose a cloud provider (AWS, Azure, Google Cloud) and a region for your database cluster.
   - Create a new cluster by selecting the desired configuration (e.g., number of nodes, instance size).
 
-<!-- 
 ### 3. Connecting with Compass to MongoDB Atlas
 - **Getting the Connection String:**
   - In your MongoDB Atlas dashboard, go to the "Clusters" tab.
@@ -65,7 +64,7 @@
 
 
 
+
 ## Exericses
 - [14_be-database-compass-crud](https://classroom.github.com/a/hwnK6Kvl)
 
--->
