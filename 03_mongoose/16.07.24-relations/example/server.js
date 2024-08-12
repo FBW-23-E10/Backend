@@ -1,14 +1,19 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+<<<<<<< HEAD
 import { Post, User } from './models.js';
 import { generateUsers } from './fake_data.js';
 
+=======
+import { User } from './models.js';
+import { Post } from './postModel.js';
+>>>>>>> f2b90c015d80d446ca58daa940956f35eefd2926
 dotenv.config();
 const app = express();
 
 // db con
-mongoose.connect(process.env.DB_URL);
+mongoose.connect('mongodb+srv://noname:1234@cluster0.1b1vhee.mongodb.net/');
 mongoose.connection.on('connected', ()=>{console.log('connection established! 😀')})
 mongoose.connection.on('error', (err)=>console.log('db con err:', err.message))
 
@@ -50,7 +55,7 @@ app.post('/post', async(req, res, next) => {
 app.get('/post', async(req, res, next) => {
     try {
         
-        const posts = await Post.find().populate('author', 'fullname').exec();
+        const posts = await Post.find().populate('author',[ 'email','fullname']).exec();
         res.json(posts)
 
     } catch (error) {
@@ -65,5 +70,5 @@ app.use((err, req, res, next)=>{
     }
 })
 
-const port = process.env.PORT || 5000;
+const port = 8000;
 app.listen(port, console.log(`server is up on port: ${port} 🚀`))

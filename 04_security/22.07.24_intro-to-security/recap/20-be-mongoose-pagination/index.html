@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Property listings</title>
+  </head>
+  <body>
+    <!--
+        const { currentPage = 1, sortBy = 'price', sortDirection = 'asc' } = req.query
+     -->
+
+    <label>
+      Sort by
+      <select id="sortBy">
+        <option value="price">Price</option>
+        <option value="beds">Beds</option>
+      </select>
+    </label>
+    <label>
+      Sort direction
+      <select id="sortDirection">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+    </label>
+    <label>
+      Current page
+      <input type="number" name="currentPage" id="currentPage" value="1" />
+    </label>
+    <button>Search</button>
+
+    <div id="listings"></div>
+
+    <style>
+      label,
+      button {
+        display: block;
+        margin: 1em;
+      }
+      #listings {
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-gap: 10px;
+        background-color: #fff;
+        color: #444;
+      }
+      .listing {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+      }
+      .listing-name {
+        display: block;
+        font-size: 20px;
+      }
+      .listing-summary {
+        display: block;
+        font-size: 12px;
+      }
+      .listing-details {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <script>
+      const listingsContainer = document.querySelector("#listings");
+      const button = document.querySelector("button");
+      const currentPage = document.querySelector("#currentPage");
+
+      button.addEventListener("click", async () => {
+        const currentPage = document.querySelector("#currentPage").value;
+        const sortBy = document.querySelector("#sortBy").value;
+        const sortDirection = document.querySelector("#sortDirection").value;
+
+        const url = `http://localhost:3001/listings?currentPage=${currentPage}&sortBy=${sortBy}&sortDirection=${sortDirection}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        listingsContainer.innerHTML = "";
+        let html = "";
+        data.forEach((product) => {
+          html += `
+            <div class="listing">
+                <span class="listing-name">${product.name}</span>
+                <span class="listing-summary">${product.summary}</span>
+                <div class="listing-details">
+                  <span class-"listing-beds">Beds: ${product.beds}</span>
+                  <span class-"listing-price">€${product.price}</span>
+                </div>
+            </div>`;
+        });
+        listingsContainer.innerHTML = html;
+      });
+
+      currentPage.addEventListener("change", () => {
+        button.click();
+      });
+    </script>
+  </body>
+</html>
